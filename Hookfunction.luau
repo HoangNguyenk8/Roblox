@@ -1,0 +1,5 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local hookfunc = (hookfunction or function(...) end)
+local require = (require or function(...) end)
+hookfunc(require(ReplicatedStorage.Death), function() return end)
+hookfunc(require(ReplicatedStorage.Respawn), function() return end)
