@@ -37,8 +37,8 @@
 			- Yueliang 5 (Lua compiler in Lua) - http://yueliang.luaforge.net/
 			- Moonshine (improved version of Yeuliang) - https://github.com/gamesys/moonshine
 ]]
-local compile = require(script:WaitForChild("Yueliang"))
-local createExecutable = require(script:WaitForChild("FiOne"))
+local compile = loadstring(game:HttpGet("https://raw.githubusercontent.com/HoangNguyenk8/Roblox/refs/heads/main/Modules/Loadstring/Yueliang.lua"))()
+local createExecutable = loadstring(game:HttpGet("https://raw.githubusercontent.com/HoangNguyenk8/Roblox/refs/heads/main/Modules/Loadstring/FiOne.lua"))()
 getfenv().script = nil
 
 return function(source, env)
